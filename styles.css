@@ -1,0 +1,70 @@
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.container>* {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.container {
+	border: 1px solid black;
+	margin: 30px;
+	width: 600px;
+	font-size: 4em;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+
+
+.red {
+	grid-column-start: 2;
+	grid-column-end: 6;
+	background: red;
+}
+.orange {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: 6;
+	background: orange;
+}
+.yellow {
+	grid-column: 2 / 4;
+	grid-row: 2 / 5;
+	background: yellow;
+}
+.green { 
+	grid-column: 4 / span 2;
+	background: green;
+ }
+.blue {
+	grid-column: 2 / span 4;
+	background: blue;
+}
+.purple {
+	grid-column-start: 6;
+	grid-row: 1 / 6;
+	background: purple;
+}
+.gray {
+	grid-area: 3 / 4 / 5 / 6;
+	background: gray;
+}
+.white {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	background: white;
+}
+
+
